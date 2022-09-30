@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FyZ-Social</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section id="navbar">
+        <img class="logo" src="assets/logo.png" alt="logo">
+        <button class="main-btn">Join Community</button>
+    </section>
+
+    <section id="main">
+        <h2>FyZ-Social - A community-governed social media platform that rewards cryptoenthusiasts.</h2>
+        <div class="content">
+            <p class="intro">You work so hard to create content on the internet, we want to help you own a lambo and be
+                quickly rich doing
+                what you love on FyZ-Social. <br>Earn rewards for creating <span class="typewriter"
+                    id="typewriter"></span>
+            </p>
+        </div>
+
+        <div class="icons">
+            <img src="assets/google.svg" alt="playstore icon">
+            <img src="assets/apple.svg" alt="appstore icon">
+        </div>
+        <div class="main-img">
+            <img class="hero" src="assets/hero.svg" alt="phone image">
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer">
+            <img src="assets/img1.svg" alt="founder image">
+            <img src="assets/img2.svg" alt="founder image">
+            <img src="assets/img3.svg" alt="founder image">
+        </div>
+        <p>Join, Create, Buy Waves and Enjoy life.</p>
+        <div>
+            <a href="">Terms of use</a>
+            <a href="">Data processing policy</a>
+        </div>
+        <p>(c) Copyright FyZ-Social 2022. All rights reserved.</p>
+    </section>
+
+    <h5>Made with love by<a href="mailto: fidele3875@gmail.com"> Fidèle Dossou</a>.</h5>
+
+    <script src="js/core.js"></script>
+
+    <script>
+        const typewriter = new Typewriter('#typewriter', {
+            loop: true,
+        });
+
+        typewriter.typeString('Photos')
+            .pauseFor(500)
+            .deleteAll()
+            .typeString('Videos')
+            .pauseFor(500)
+            .deleteAll()
+            .typeString('Content')
+            .pauseFor(2000)
+            .start();
+    </script>
+
+</body>
+
+</html>
