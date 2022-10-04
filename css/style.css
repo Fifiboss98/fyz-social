@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,11 +9,12 @@ body {
 }
 
 h2 {
-    margin-top: 100px;
+    margin-top: 70px;
     font-size: 2.5rem;
-    font-weight: 500;
-    text-align: center;
+    font-weight: 700;
+    text-align: left;
     padding: 20px 80px;
+    letter-spacing: 2px;
 }
 
 h5 {
@@ -32,12 +34,23 @@ h5 {
     height: 50px
 }
 
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-left{
+    display: block;
+    width: 80%;
+}
+
 .main-btn {
     padding: 0 20px;
     background-color: rgb(8, 21, 53);
     color: #f1f1f1;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .main-btn:active {
@@ -45,9 +58,9 @@ h5 {
 }
 
 .intro {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
     padding: 20px 80px;
     font-size: 1.5rem;
     opacity: 0.8;
@@ -77,8 +90,8 @@ h5 {
 }
 
 .hero {
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
 }
 
 .main-img {
@@ -103,7 +116,7 @@ h5 {
         transform: translate(0, 0px);
     }
     50% {
-        transform: translate(0, 15px);
+        transform: translate(0, 25px);
     }
     100% {
         transform: translate(0, 0px);
@@ -118,14 +131,17 @@ h5 {
 }
 
 .footer img {
-    border: 5px solid white;
+    width: 80px;
+    height: 80px;
+    border: 3px solid white;
     border-radius: 50%;
-    margin-left: -50px;
+    margin-left: -35px;
 }
 
 #footer p {
     text-align: center;
     padding: 20px 0;
+    font-size: 1.2rem;
 }
 
 #footer div {
@@ -137,4 +153,5 @@ h5 {
 #footer div a {
     text-decoration: none;
     color: blue;
+    font-size: 1.2rem;
 }
